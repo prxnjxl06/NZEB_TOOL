@@ -104,7 +104,7 @@ if 'total_energy' in st.session_state:
 
     if gemini_api_key:
         if st.button("Get AI-Generated NZEB Plan"):
-            with st.spinner("Generating plan using Gemini..."):
+            with st.spinner("Generating Your AI Plan..."):
                 if nzeb_possible:
                     prompt = f"""
 You are an expert in sustainable building design. Given the following building energy data, generate a strategy to achieve Net Zero Energy:
