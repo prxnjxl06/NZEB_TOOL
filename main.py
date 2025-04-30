@@ -4,7 +4,11 @@ from dotenv import load_dotenv
 import google.generativeai as genai
 
 # --- Load environment variables ---
-load_dotenv()
+try:
+    load_dotenv()
+except:
+    pass
+
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=gemini_api_key)
 
